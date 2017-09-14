@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainAddManagerPanel" maxHeight="687.0" maxWidth="616.0" minHeight="633.0" minWidth="616.0" prefHeight="687.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="gifLabel" layoutX="57.0" layoutY="22.0" prefHeight="86.0" prefWidth="499.0" />
+      <Button fx:id="addManager" layoutX="59.0" layoutY="619.0" mnemonicParsing="false" onMouseClicked="#addManagerMaseCliked" prefHeight="54.0" prefWidth="499.0" text="Add Manager">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Button>
+      <TextField fx:id="manFirstName" layoutX="57.0" layoutY="129.0" onInputMethodTextChanged="#managerFNameChange" prefHeight="37.0" prefWidth="499.0" promptText="Manager First Name">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="managerLastName" layoutX="57.0" layoutY="180.0" onInputMethodTextChanged="#managerLNameChange" prefHeight="37.0" prefWidth="499.0" promptText="Manager Last Name">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="managerContactNumber" layoutX="57.0" layoutY="233.0" onInputMethodTextChanged="#managerContactChange" prefHeight="37.0" prefWidth="499.0" promptText="Manager Contact Number">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="12.0" layoutY="106.0" prefHeight="5.0" prefWidth="590.0" />
+      <Label fx:id="manFNameCheck" layoutX="562.0" layoutY="128.0" prefHeight="37.0" prefWidth="41.0" />
+      <Label fx:id="manLNameCheck" layoutX="562.0" layoutY="180.0" prefHeight="37.0" prefWidth="41.0" />
+      <Label fx:id="manContactNumberCheck" layoutX="562.0" layoutY="233.0" prefHeight="37.0" prefWidth="41.0" />
+      <Separator layoutX="12.0" layoutY="603.0" prefHeight="5.0" prefWidth="590.0" />
+      <TextField fx:id="addressLine1" layoutX="57.0" layoutY="344.0" onInputMethodTextChanged="#addressLine1Change" prefHeight="37.0" prefWidth="499.0" promptText="Address Line 1">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addressLine2" layoutX="57.0" layoutY="396.0" onInputMethodTextChanged="#addressLine2Change" prefHeight="37.0" prefWidth="499.0" promptText="Address Line 2">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="city" layoutX="57.0" layoutY="446.0" onInputMethodTextChanged="#cityChange" prefHeight="37.0" prefWidth="499.0" promptText="City">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="county" layoutX="57.0" layoutY="497.0" onInputMethodTextChanged="#countyChange" prefHeight="37.0" prefWidth="499.0" promptText="County">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="country" layoutX="57.0" layoutY="553.0" onInputMethodTextChanged="#countryChange" prefHeight="37.0" prefWidth="499.0" promptText="Country">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label fx:id="manaddressFirstLine1Check" layoutX="562.0" layoutY="345.0" prefHeight="37.0" prefWidth="41.0" />
+      <Label fx:id="manaddressFirstLine2Check" layoutX="562.0" layoutY="397.0" prefHeight="37.0" prefWidth="41.0" />
+      <Label fx:id="citycheck" layoutX="562.0" layoutY="447.0" prefHeight="37.0" prefWidth="41.0" />
+      <Label fx:id="countyCheck" layoutX="562.0" layoutY="498.0" prefHeight="37.0" prefWidth="41.0" />
+      <Label fx:id="countryCheck" layoutX="562.0" layoutY="554.0" prefHeight="37.0" prefWidth="41.0" />
+      <TextField fx:id="managerEmail" layoutX="56.0" layoutY="287.0" onInputMethodTextChanged="#managerEmailChange" prefHeight="37.0" prefWidth="499.0" promptText="Manager Email">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label fx:id="manEmailCheck" layoutX="561.0" layoutY="287.0" prefHeight="37.0" prefWidth="41.0" />
+   </children>
+</Pane>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="mainPane" prefHeight="403.0" prefWidth="613.0" />
+      <TabPane fx:id="table" layoutX="-8.0" layoutY="-5.0" prefHeight="408.0" prefWidth="611.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="About Us">
+               <content>
+                  <Pane prefHeight="467.0" prefWidth="611.0">
+                     <children>
+                        <Label layoutX="68.0" layoutY="24.0" prefHeight="26.0" prefWidth="90.0" text="Designers:" underline="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label layoutX="68.0" layoutY="172.0" prefHeight="22.0" prefWidth="90.0" text="Objective:" underline="true">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font></Label>
+                        <GridPane fx:id="gridInfoPane" layoutX="68.0" layoutY="50.0" prefHeight="94.0" prefWidth="399.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="164.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="306.0" minWidth="10.0" prefWidth="294.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="200.0" text="Name">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="200.0" text="Student ID Number" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="25.0" prefWidth="150.0" text="Daniel Mroz" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="200.0" text="X00125984" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="25.0" prefWidth="150.0" text="Alex Mac Uaid" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="200.0" text="X00118478" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="25.0" prefWidth="150.0" text="Niall Moone" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="200.0" text="X00122541" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Separator layoutX="6.0" layoutY="159.0" prefHeight="13.0" prefWidth="443.0" />
+                        <TextArea fx:id="textAreapane" layoutX="40.0" layoutY="198.0" prefHeight="166.0" prefWidth="390.0" text="This system was designed to book a session in a recording studio for a certain set amount of time. The manager and administers have the option to add, update and delete a band and the band manager. The user can add any additional perks to the booking such as equipment and personal(eg. technician, sound engineer). The data will be stored andwill give the user a calculated price." wrapText="true" />
+                        <Separator layoutX="447.0" layoutY="-23.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="0.0" />
+                        <Label fx:id="funnyLabel" layoutX="453.0" layoutY="8.0" prefHeight="353.0" prefWidth="149.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainAddBandPanel" maxHeight="633.0" maxWidth="616.0" minHeight="633.0" minWidth="616.0" prefHeight="633.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Label fx:id="gifLabel" layoutX="57.0" layoutY="22.0" prefHeight="86.0" prefWidth="499.0" />
+      <Button fx:id="addBandButton" layoutX="59.0" layoutY="565.0" mnemonicParsing="false" onMouseClicked="#onAddbandMauseCliked" prefHeight="54.0" prefWidth="499.0" text="Add Band">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Button>
+      <TextField fx:id="bandNameInput" layoutX="57.0" layoutY="129.0" prefHeight="37.0" prefWidth="499.0" promptText="Band Name">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="numberOfPeopelInput" layoutX="57.0" layoutY="180.0" prefHeight="37.0" prefWidth="499.0" promptText="Number Off Peopel in The Band">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="musicGenerInput" layoutX="57.0" layoutY="233.0" prefHeight="37.0" prefWidth="499.0" promptText="Music Gener">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="12.0" layoutY="286.0" prefHeight="5.0" prefWidth="590.0" />
+      <Separator layoutX="12.0" layoutY="106.0" prefHeight="5.0" prefWidth="590.0" />
+      <Label fx:id="bandNameCompliteLabel" layoutX="562.0" layoutY="128.0" prefHeight="37.0" prefWidth="41.0" />
+      <Label fx:id="bandNumberOfPeopelCompleteLabel" layoutX="562.0" layoutY="180.0" prefHeight="37.0" prefWidth="41.0" />
+      <Label fx:id="bandMusicGenerCompleteLabel" layoutX="562.0" layoutY="233.0" prefHeight="37.0" prefWidth="41.0" />
+      <Label fx:id="informationText" layoutX="57.0" layoutY="298.0" prefHeight="27.0" prefWidth="499.0" text="Band is Not in The Data base And it will be added">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="12.0" layoutY="332.0" prefHeight="5.0" prefWidth="590.0" />
+      <ListView fx:id="listViewOfManagers" layoutX="59.0" layoutY="430.0" prefHeight="117.0" prefWidth="499.0" />
+      <CheckBox fx:id="managerIsInDbCheckBox" layoutX="59.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#onMauseClikedManagerIsInDB" prefHeight="17.0" prefWidth="499.0" text="Manager is In the Database">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="shearchManagerButton" layoutX="59.0" layoutY="379.0" prefHeight="37.0" prefWidth="499.0" promptText="Search By Name">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+      </TextField>
+      <Button fx:id="addManagerButton" layoutX="57.0" layoutY="406.0" mnemonicParsing="false" onMouseClicked="#addManagerMauseClicked" prefHeight="54.0" prefWidth="499.0" text="Add Manager">
+         <font>
+            <Font name="Agency FB Bold" size="28.0" />
+         </font>
+      </Button>
+      <Separator layoutX="12.0" layoutY="553.0" prefHeight="5.0" prefWidth="590.0" />
+      <Label fx:id="informationLabelWhatToDo" layoutX="59.0" layoutY="565.0" prefHeight="54.0" prefWidth="499.0" text="Label">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

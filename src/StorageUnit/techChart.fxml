@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="gifLabel" layoutX="70.0" layoutY="24.0" prefHeight="86.0" prefWidth="499.0" AnchorPane.topAnchor="24.0" />
+      <Separator layoutX="22.0" layoutY="125.0" prefHeight="5.0" prefWidth="595.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="125.0" />
+      <BarChart fx:id="barChart" layoutX="29.0" layoutY="169.0" prefHeight="442.0" prefWidth="595.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="169.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label fx:id="infoLabel" layoutX="70.0" layoutY="137.0" prefHeight="17.0" prefWidth="499.0" text="Label" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="137.0">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

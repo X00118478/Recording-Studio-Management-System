@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1081.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="bookBandMainButton" layoutX="1.0" layoutY="597.0" mnemonicParsing="false" onMouseClicked="#bookedBandMainCliked" prefHeight="26.0" prefWidth="1081.0" text="Book A Band" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Button>
+      <Label fx:id="gifLabel" layoutX="541.0" layoutY="27.0" prefHeight="86.0" prefWidth="499.0" AnchorPane.leftAnchor="541.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="27.0" />
+      <Separator layoutX="24.0" layoutY="113.0" prefHeight="3.0" prefWidth="1056.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="113.0" />
+      <ListView fx:id="listViewBands" layoutX="27.0" layoutY="207.0" onMouseClicked="#choseBandMauseClicked" prefHeight="146.0" prefWidth="202.0" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="207.0" />
+      <ListView fx:id="listViewCheckout" layoutX="596.0" layoutY="157.0" onMouseClicked="#onMauseClickedReceit" prefHeight="341.0" prefWidth="482.0" AnchorPane.bottomAnchor="145.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="157.0" />
+      <ListView fx:id="serviceListView" layoutX="238.0" layoutY="412.0" onMouseClicked="#serviceListVlicked" prefHeight="135.0" prefWidth="351.0" />
+      <ListView fx:id="listViewEquipment" layoutX="27.0" layoutY="412.0" onMouseClicked="#equipmentMauseClicked" prefHeight="173.0" prefWidth="202.0" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="27.0" />
+      <ListView fx:id="listViewTechnician" layoutX="238.0" layoutY="207.0" onMouseClicked="#technicianMauseClicked" prefHeight="146.0" prefWidth="351.0" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="492.0" AnchorPane.topAnchor="207.0" />
+      <CheckBox fx:id="bandExistCheckBox" layoutX="27.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#bandExistComboBox" prefHeight="28.0" prefWidth="181.0" text="Band Exist" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="124.0">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="priceLabel" layoutX="596.0" layoutY="543.0" prefHeight="48.0" prefWidth="482.0" text="Price :" AnchorPane.bottomAnchor="52.0" AnchorPane.rightAnchor="3.0">
+         <font>
+            <Font name="Agency FB Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="checkoutLabel" layoutX="798.0" layoutY="122.0" text="Checkout" AnchorPane.rightAnchor="204.0">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteSelectedButon" layoutX="597.0" layoutY="502.0" mnemonicParsing="false" onMouseClicked="#deleteCheckoutpreased" prefHeight="25.0" prefWidth="482.0" text="Delete Selected" AnchorPane.bottomAnchor="107.0" AnchorPane.rightAnchor="2.0">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="datePicker" layoutX="238.0" layoutY="122.0" prefHeight="34.0" prefWidth="351.0" promptText="Book Date" onMouseClicked="#datePickerSelected" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="492.0" AnchorPane.topAnchor="122.0" />
+      <Label fx:id="selectTechnicianLabel" layoutX="324.0" layoutY="168.0" text="Select Technician/s" AnchorPane.leftAnchor="324.0" AnchorPane.rightAnchor="587.0" AnchorPane.topAnchor="168.0">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="236.0" layoutY="364.0" prefHeight="3.0" prefWidth="360.0" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="485.0" />
+      <Label fx:id="selectedServiceLabel" layoutX="347.0" layoutY="373.0" text="Select Service" AnchorPane.leftAnchor="347.0" AnchorPane.rightAnchor="610.0" AnchorPane.topAnchor="373.0">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="selectedBandLabel" layoutX="78.0" layoutY="168.0" text="Select Band" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="168.0">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="selectedEquipmentLabel" layoutX="55.0" layoutY="373.0" text="Select Equipment" AnchorPane.bottomAnchor="239.0" AnchorPane.leftAnchor="55.0">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantitiOfServiceInput" layoutX="241.0" layoutY="554.0" onKeyPressed="#quantityTextFildPreased" onMouseClicked="#quantityCliked" prefHeight="25.0" prefWidth="351.0" promptText="Quantity Of Service" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="241.0" AnchorPane.rightAnchor="489.0">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="14.0" layoutY="366.0" prefHeight="3.0" prefWidth="214.0" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="14.0" />
+      <Button fx:id="addNewBandButton" layoutX="28.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#addNewBandButonCliked" prefHeight="48.0" prefWidth="202.0" text="Add Band" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="851.0" AnchorPane.topAnchor="207.0">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="gifLabel1" layoutX="42.0" layoutY="27.0" prefHeight="86.0" prefWidth="499.0" />
+   </children>
+</AnchorPane>

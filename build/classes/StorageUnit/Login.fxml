@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFxControlers.LoginController">
+   <children>
+      <TextField fx:id="loginTextFild" layoutX="59.0" layoutY="198.0" onMouseClicked="#loginMauseClicked" prefHeight="72.0" prefWidth="499.0" promptText="Login">
+         <font>
+            <Font name="Agency FB Bold" size="38.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordTextFild" layoutX="59.0" layoutY="293.0" onKeyPressed="#enterPreased" prefHeight="72.0" prefWidth="499.0" promptText="Password">
+         <font>
+            <Font name="Agency FB Bold" size="38.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="loginButtton" layoutX="59.0" layoutY="388.0" mnemonicParsing="false" onKeyPressed="#enterPreased" onMouseClicked="#looginButtonClicked" prefHeight="72.0" prefWidth="499.0" text="Login" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB Bold" size="36.0" />
+         </font>
+      </Button>
+      <Label fx:id="wrongPasswordLabel" layoutX="59.0" layoutY="468.0" prefHeight="17.0" prefWidth="499.0" text="Wrong Authentication Details" textFill="RED">
+         <font>
+            <Font name="Agency FB Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="RecLabelSystem" layoutX="59.0" layoutY="130.0" prefHeight="17.0" prefWidth="499.0" text="Recording Studio Managment System">
+         <font>
+            <Font name="Agency FB Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label id="gifLabel" fx:id="animationLabel" layoutX="59.0" layoutY="15.0" prefHeight="94.0" prefWidth="499.0" />
+      <Button fx:id="exitButton" layoutX="572.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#exitButtonPreased" prefHeight="20.0" prefWidth="31.0" text="x" />
+   </children>
+</Pane>
